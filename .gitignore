@@ -1,0 +1,16 @@
+__MACOSX
+.Saved
+_arc
+bower_components
+node_modules
+.vscode
+.idea
+.publish
+.DS_Store
+*DS_Store
+*.log
+*.sublime-*
+*.rar
+*.zip
+ex_files
+Thumbs.db
