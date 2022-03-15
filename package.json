@@ -11,11 +11,12 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.27.8",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0",
     "gulp-pug": "^5.0.0"
   },
   "dependencies": {
-    "normalize.less": "^1.0.0"
+    "normalize.css.less": "^3.0.3"
   }
 }
