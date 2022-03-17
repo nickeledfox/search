@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  include includes/head
+    title Images Search
+  body
+    header.header
+      nav.nav.images
+        .nav-inner
+          a.avatar-placeholder(href="#")
+            img(src="./images/favicon.ico", alt="avatar-placeholder")
+            
+    .container
+      .logo-container
+        img.logo(src="./images/googlelogo_color.png", alt="google-logo")
+      .form-container
+        form(action="https://www.google.com/search" method="GET")
+          input(type="text" name="q").form
+          input(type="hidden" name="tbm" value="isch")
+          img.search-icon(src="./images/search.svg", alt="icon")

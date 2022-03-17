@@ -3,6 +3,49 @@ html(lang="en")
   include includes/head
     title Search
   body
-    p Search page
+    header.header
+      nav.nav 
+          ul.nav-inner
+            li
+              a(href="") About 
+            li
+              a(href="") Store
+          ul.nav-inner
+            li
+              a(href="") Gmail 
+            li
+              a(href="images-search.html") Images
+            li
+              a.avatar-placeholder(href="#")
+                img(src="./images/favicon.ico", alt="avatar-placeholder") 
 
+    .container
+      .logo-container
+        img.logo(src="./images/googlelogo_color.png", alt="google-logo")
+      .form-container
+        form(action="https://www.google.com/search" method="GET")
+          input(type="text" name="q").form
+          img.search-icon(src="./images/search.svg", alt="icon")
+          .button-container
+            input.btn.main(type="submit" value="Google Search")
+            input.btn(type="submit" name="btnI" value="I'm Feeling Lucky")
 
+    footer.footer 
+      nav.nav
+        ul.nav-inner
+          li
+            a(href="") Advertising
+          li
+            a(href="") Businnes
+          li
+            a(href="") How Search works
+        .nav-inner.carbon-neutral
+          img.footer-img(src="./images/footer-img.png", alt="")
+          a(href="") Carbon neutral since 2007
+        ul.nav-inner
+          li
+            a(href="") Privacy
+          li
+            a(href="") Terms
+          li
+            a(href="") Settungs
