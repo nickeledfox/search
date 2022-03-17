@@ -5,15 +5,43 @@ html(lang="en")
   body
     header.header
       nav.nav.images
-        .nav-inner
-          a.avatar-placeholder(href="#")
-            img(src="./images/favicon.ico", alt="avatar-placeholder")
+          ul.nav-inner
+            li
+              a(href="index.html") Google Search
+            li
+              a.avatar-placeholder(href="#")
+                img(src="./images/favicon.ico", alt="avatar-placeholder")
             
     .container
       .logo-container
         img.logo(src="./images/googlelogo_color.png", alt="google-logo")
+        span#images Images
       .form-container
         form(action="https://www.google.com/search" method="GET")
           input(type="text" name="q").form
+          // tbm=isch: to be matched = image search
           input(type="hidden" name="tbm" value="isch")
           img.search-icon(src="./images/search.svg", alt="icon")
+
+    // No links, this footer is only decoration inspired of original Google Images Search page 
+    footer.footer 
+      nav.nav
+        ul.nav-inner
+          li 
+            a(href="") About
+          li
+            a(href="") Advertising
+          li
+            a(href="") Businnes
+          li
+            a(href="") How Search works
+        .nav-inner.carbon-neutral.images-search
+          img.footer-img(src="./images/footer-img.png", alt="leaf")
+          a(href="") Carbon neutral since 2007
+        ul.nav-inner
+          li
+            a(href="") Privacy
+          li
+            a(href="") Terms
+          li
+            a(href="") Settungs
