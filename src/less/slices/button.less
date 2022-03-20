@@ -4,8 +4,8 @@
 }
 
 .btn {
+  .border(1px; solid; @btn-bg);
   background-color: @btn-bg;
-  border: 1px solid @btn-bg;
   border-radius: 4px;
   color: @btn-font;
   font-family: Roboto, arial, sans-serif;
@@ -31,6 +31,6 @@
 
 .btn.main {
   &:focus {
-    border-color: #4285f4;
+    border-color: @accent-color;
   }
 }

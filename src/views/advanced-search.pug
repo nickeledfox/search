@@ -3,4 +3,56 @@ html(lang="en")
   include includes/head
     title Advanced Search
   body
-    p Advanced Search page
+    //- header
+    header.header
+      nav.nav
+        .nav-inner 
+          a(href="index.html").advanced-search-googlelogo
+            img(src="./images/googlelogo_color.png", alt="googlelogo") 
+        ul.nav-inner
+          li
+            a(href="index.html") Google Search
+          li
+            a.avatar-placeholder(href="#")
+              img(src="./images/cat.jpeg", alt="avatar-placeholder")
+    label.advanced-search-label Advanced Search
+    .border
+    // Advanced Search Form
+    .advanced-search-conteiner
+      form.advanced-search-form(action="https://www.google.com/search" method="GET" name="f")
+        .advanced-search-top
+          span.advanced-search-form__title Find pages with... 
+          span.inst.title To do this in the search box
+        .advanced-search-inner
+          label(for="first") all these words:
+          input#first(type="text" name="as_q")
+          div.inst Type the important words: 
+            span tricolor rat terrier
+          label(for="second") this exact word or phrase:
+          input#second(type="text" name="as_epq")
+          div.inst Put exact words in quotes: 
+            span "rat terrier"
+          label(for="third") any of these words:
+          input#third(type="text" name="as_oq")
+          div.inst Type OR between all the words you want:  
+            span miniature OR standard
+          label(for="fourth") none of these words:
+          input#fourth(type="text" name="as_eq")
+          div.inst Put a minus sign just before words you don't want: 
+            span -rodent, -"Jack Russell"
+          div.inst
+          input.advanced-search-btn(type="submit" value="Advanced Search")
+
+    .border
+
+    //- footer
+    // No links, this footer is only decoration inspired of original Google Advanced Search page 
+    footer.footer.advanced-search 
+      nav.nav.advanced-search
+        ul.nav-inner
+          li
+            a(href="") Help
+          li
+            a(href="") Privacy
+          li
+            a(href="") Terms
