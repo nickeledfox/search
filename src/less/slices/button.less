@@ -1,3 +1,5 @@
+/* Google form buttons */
+
 .button-container {
   .flex-c();
   padding-top: 18px;
@@ -33,4 +35,20 @@
   &:focus {
     border-color: @accent-color;
   }
+}
+
+/* Advanced search button */
+
+.advanced-search-btn {
+  .border(1px; solid; #3079ed);
+  user-select: none;
+  line-height: 100%;
+  height: 30px;
+  min-width: 120px;
+  color: #fff;
+  background-color: @accent-color;
+  background-image: linear-gradient(top, #4d90fe, #4787ed);
+  border-radius: 3px;
+  place-self: end;
+  grid-template-columns: 2fr;
 }
