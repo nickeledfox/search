@@ -1,3 +1,5 @@
+/* Main Google form */
+
 .form-container {
   width: 640px;
   padding-top: 6px;
@@ -6,12 +8,12 @@
   position: relative;
 }
 .form {
+  .border(1px; solid; #dfe1e5);
   display: flex;
   z-index: 3;
   height: 44px;
   background: transparent;
   background: #fff;
-  border: 1px solid #dfe1e5;
   box-shadow: none;
   border-radius: 24px;
   margin: 0 auto;
@@ -32,4 +34,11 @@
   top: 20px;
   left: 10px;
   opacity: 0.4;
+}
+
+/* Advanced Search Form */
+.advanced-search-form {
+  &__title {
+    font-size: 16px;
+  }
 }
