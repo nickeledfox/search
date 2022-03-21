@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./main.css">
+    <title>Advanced Search</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-inner"> <a class="advanced-search-googlelogo" href="index.html"><img src="./images/googlelogo_color.png" alt="googlelogo"></a></div>
+        <ul class="nav-inner">
+          <li><a href="index.html">Google Search</a></li>
+          <li><a class="avatar-placeholder" href="#"><img src="./images/cat.jpeg" alt="avatar-placeholder"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <label class="advanced-search-label">Advanced Search</label>
+    <div class="border"></div>
+    <!-- Advanced Search Form-->
+    <div class="advanced-search-conteiner">
+      <form class="advanced-search-form" action="https://www.google.com/search" method="GET" name="f">
+        <div class="advanced-search-top"><span class="advanced-search-form__title">Find pages with... </span><span class="inst title">To do this in the search box</span></div>
+        <div class="advanced-search-inner">
+          <label for="first">all these words:</label>
+          <input id="first" type="text" name="as_q">
+          <div class="inst">Type the important words: <span>tricolor rat terrier</span></div>
+          <label for="second">this exact word or phrase:</label>
+          <input id="second" type="text" name="as_epq">
+          <div class="inst">Put exact words in quotes: <span>"rat terrier"</span></div>
+          <label for="third">any of these words:</label>
+          <input id="third" type="text" name="as_oq">
+          <div class="inst">Type OR between all the words you want:  <span>miniature OR standard</span></div>
+          <label for="fourth">none of these words:</label>
+          <input id="fourth" type="text" name="as_eq">
+          <div class="inst">Put a minus sign just before words you don't want: <span>-rodent, -"Jack Russell"</span></div>
+          <div class="inst"></div>
+          <input class="advanced-search-btn" type="submit" value="Advanced Search">
+        </div>
+      </form>
+    </div>
+    <div class="border"></div>
+    <!-- No links, this footer is only decoration inspired of original Google Advanced Search page -->
+    <footer class="footer advanced-search decor"> 
+      <nav class="nav advanced-search">
+        <ul class="nav-inner">
+          <li><a href="">Help</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

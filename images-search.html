@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./main.css">
+    <title>Images Search</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav images">
+        <ul class="nav-inner">
+          <li><a href="index.html">Google Search</a></li>
+          <li><a class="avatar-placeholder" href="#"><img src="./images/cat.jpeg" alt="avatar-placeholder"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="logo-container"><img class="logo" src="./images/googlelogo_color.png" alt="google-logo"><span class="images-span">Images</span></div>
+      <div class="form-container">
+        <form action="https://www.google.com/search" method="GET">
+          <input class="form" type="text" name="q">
+          <!-- tbm=isch: to be matched = image search-->
+          <input type="hidden" name="tbm" value="isch"><img class="search-icon" src="./images/search.svg" alt="icon">
+        </form>
+      </div>
+    </div>
+    <!-- No links, this footer is only decoration inspired of original Google Images Search page -->
+    <footer class="footer decor">
+      <nav class="nav">
+        <ul class="nav-inner">
+          <li> <a href="">About</a></li>
+          <li><a href="">Advertising</a></li>
+          <li><a href="">Businnes</a></li>
+          <li><a href="">How Search works</a></li>
+        </ul>
+        <div class="nav-inner carbon-neutral images-search"><img class="footer-img" src="./images/footer-img.png" alt="leaf"><a href="">Carbon neutral since 2007</a></div>
+        <ul class="nav-inner">
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Settings</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
