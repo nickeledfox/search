@@ -2,6 +2,11 @@
   margin: 0 auto;
   align-items: center;
   margin-top: 5%;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .logo-container {
@@ -23,7 +28,7 @@
   color: @accent-color;
   position: absolute;
   bottom: 0;
-  right: 28%;
+  right: 3%;
   white-space: nowrap;
 }
 
@@ -31,30 +36,47 @@
   .border(0.25px; solid; #ebebeb);
 }
 
-/* Advanced Search */
-.inst {
-  color: #555;
-  font-size: 11px;
+.decor {
+  display: none;
 
-  &.title {
-    font-size: 14px;
-    font-weight: 700;
-    color: #777;
+  @media (min-width: 720px) {
+    display: block;
   }
 }
 
-.inst > span {
-  color: #666;
-  font-family: monospace;
+/* Advanced Search */
+.inst {
+  display: none;
+}
+@media (min-width: 920px) {
+  .inst {
+    display: block;
+    color: #555;
+    font-size: 11px;
+
+    &.title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #777;
+    }
+  }
+
+  .inst > span {
+    color: #666;
+    font-family: monospace;
+  }
 }
 
 .advanced-search {
   &-conteiner {
     max-width: 1140px;
     min-width: 200px;
-    width: 96%;
     margin: 40px 2% 0 45px;
     margin-bottom: 30px;
+
+    @media (max-width: 920px) {
+      margin: 40px 10px;
+    }
   }
 
   &-googlelogo img {
@@ -66,7 +88,12 @@
     color: #d93025;
     font-size: 20px;
     margin: 25px 40px;
+
+    @media (max-width: 920px) {
+      margin: 40px 10px;
+    }
   }
+
   &-top {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -75,9 +102,12 @@
 
   &-inner {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
     grid-row-gap: 10px;
     grid-column-gap: 12px;
     align-items: center;
+
+    @media (min-width: 920px) {
+      grid-template-columns: 1fr 2fr 2fr;
+    }
   }
 }
