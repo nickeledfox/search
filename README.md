@@ -5,7 +5,7 @@
 Design a front-end for Google Search, Google Image Search, and Google Advanced Search.
 
 ### About this repo
-This branch is a source code, an actuall output (html, css) can be found on web50/projects/2020/x/search branch.
+This branch is a source code, an actual output (HTML, CSS) can be found [here](https://github.com/nickeledfox/search/tree/web50/projects/2020/x/search)
 
 ## Project setup
 
